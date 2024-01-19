@@ -2,7 +2,7 @@ new: cba
 on:
 push: branches["main"]
 pull:
-edired:
+edited:
 workflow_dispatch:
 job:
 build:
