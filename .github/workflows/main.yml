@@ -1,0 +1,12 @@
+new: cba
+on:
+push: branches["main"]
+pull:
+edired:
+workflow_dispatch
+job:
+build:
+run-on: ubuntu-latest
+ step:
+ -name: Checkout Repository
+  - run: echo"its your id 20015"
