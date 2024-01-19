@@ -7,6 +7,6 @@ workflow_dispatch:
 job:
 build:
 run-on: ubuntu-latest
- step:
+ steps:
  -name: Checkout Repository
   - run: echo"its your id 20015"
