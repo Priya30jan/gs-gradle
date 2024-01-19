@@ -3,7 +3,7 @@ on:
 push: branches["main"]
 pull:
 edired:
-workflow_dispatch
+workflow_dispatch:
 job:
 build:
 run-on: ubuntu-latest
