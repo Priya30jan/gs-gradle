@@ -1,12 +1,14 @@
-new: cba
+name: cba
 on:
-push: branches["main"]
-pull:
-edited:
-workflow_dispatch:
-job:
-build:
-run-on: ubuntu-latest
- steps:
- -name: Checkout Repository
-  - run: echo"its your id 20015"
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      run: echo "It's my uid 20015"
